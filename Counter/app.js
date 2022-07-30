@@ -17,6 +17,16 @@ btns.forEach(function(item){
   else if(changes.contains('increase')){
     count++;
   }
+  if(count<0){
+    value.style.color="red";
+  }
+    if(count===0){
+    value.style.color="#222";
+  }
+    if(count>0){
+    value.style.color="green";
+  }
+
   value.textContent = count;
  });
 });
