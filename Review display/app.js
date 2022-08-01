@@ -1,4 +1,4 @@
-const review=[
+const reviews=[
     {
         id:1,
         name:"Saurav Shakya",
@@ -21,7 +21,7 @@ const review=[
         text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
     },
     {
-        id:1,
+        id:4,
         name:"Paltik Shrestha",
         job:"Front end developer",
         img:"C:\Users\HP B&O\Desktop\New folder\paltik.jpg",
@@ -32,4 +32,20 @@ const img=document.getElementById("person-img");
 const author=document.getElementById("author");
 const job=document.getElementById("job");
 const info=document.getElementById("info");
+
+const prevBtn =document.querySelector(".prev-btn");
+const nextBtn =document.querySelector(".next-btn");
+const randomBtn =document.querySelector(".random-btn");
+
+//starting value
+let currentItem=0;
+
+//load initial item
+window.addEventListener('DOMContentLoaded',function(){
+    //console.log("hello");
+    const item=reviews[currentItem];
+    img.src= item.img;
+
+});
+
 
