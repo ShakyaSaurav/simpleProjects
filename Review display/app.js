@@ -6,6 +6,27 @@ const review=[
         img:"C:\Users\HP B&O\Desktop\IMG_9224.JPG",
         text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
     },
+    {
+        id:2,
+        name:"Saugat Shakya",
+        job:"Senior Web developer",
+        img:"C:\Users\HP B&O\Desktop\IMG_9224.JPG",
+        text:"asdasdkldsfhjkyhjkhjkhujnmnfvcbcxcxcvcxvxcvcxvcxxcvxjadsjhhjadsjh",
+    },
+    {
+        id:3,
+        name:"Vishma Shrestha",
+        job:"Singer",
+        img:"C:\Users\HP B&O\Desktop\IMG_9224.JPG",
+        text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
+    },
+    {
+        id:1,
+        name:"Paltik Shrestha",
+        job:"Front end developer",
+        img:"C:\Users\HP B&O\Desktop\New folder\paltik.jpg",
+        text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
+    },
 ];
 const img=document.getElementById("person-img");
 const author=document.getElementById("author");
