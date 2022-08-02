@@ -3,7 +3,7 @@ const reviews=[
         id:1,
         name:"Saurav Shakya",
         job:"Web developer",
-        img:"C:\Users\HP B&O\Desktop\IMG_9224.JPG",
+        img:"IMG_9224.jpg",
         text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
     },
     {
@@ -24,7 +24,7 @@ const reviews=[
         id:4,
         name:"Paltik Shrestha",
         job:"Front end developer",
-        img:"C:\Users\HP B&O\Desktop\New folder\paltik.jpg",
+        img:"paltik.jpg",
         text:"asdkjadshjhjadshjhjdhjjhadsjhhjadjhjadshjdjhjhadhjjhhjadshjhjhjadsjhhjadsjh",
     },
 ];
