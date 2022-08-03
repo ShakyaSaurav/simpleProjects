@@ -7,14 +7,21 @@
     <title>
         SideBar
     </title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all/min.css"/>
+    < <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
 
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
     <aside class="sidebar">
-        <div class = "sidebar-toggle">
+        <div class = "sidebar-header">
+            <img src="logo.svg" class="logo" alt-="logo">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
             <ul class="links">
                 <li>
                     <a href="index.html">home</a>
@@ -56,7 +63,6 @@
                     </a>
                   </li>
             </ul>
-        </div>
     </aside>
 <script src="app.js"></script>
 </body>
