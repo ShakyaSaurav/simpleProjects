@@ -8,7 +8,7 @@ const menu=[
     desc:'Yummy plain pizza with tomato sauce and mozarella cheese on top. Baked on a wood-fire oven.',
 }, 
 {
-    id:2
+    id:2,
     title:'Banana toast',
     category:'breakfast',
     price:150,
@@ -16,7 +16,7 @@ const menu=[
     desc:'bread toasted on ghee and topped with fresh banana and chocolate syrup',
 }, 
 {
-    id:3
+    id:3,
     title:'Daal Bhat',
     category:'lunch',
     price:550,
@@ -24,11 +24,19 @@ const menu=[
     desc:'traditional nepali food with rice and lentil and a side of delicious curries and pickles.',
 }, 
 {
-    id:4
+    id:4,
     title:'Fried chicken',
     category:'breakfast',
-    price:350
+    price:350,
     img:'./images/item4.jpg',
     desc:'fried crispy chicken with a side of fries and dip',
 },    
-]
+];
+const sectionCenter=document.querySelector('.section-center');
+window.addEventListener('DOMContentLoaded',function(){
+ //console.log('cooking');
+ let displayMenu= menu.map(function(item){
+    return item;
+ });
+ console.log(displayMenu);
+});
