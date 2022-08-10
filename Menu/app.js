@@ -17,18 +17,18 @@ const menu=[
 }, 
 {
     id:3
-    title:'',
-    category:'',
-    price:,
-    img:'',
-    desc:'',
+    title:'Daal Bhat',
+    category:'lunch',
+    price:550,
+    img:'./images/item3.jpg',
+    desc:'traditional nepali food with rice and lentil and a side of delicious curries and pickles.',
 }, 
 {
     id:4
-    title:'',
-    category:'',
-    price:
-    img:'',
-    desc:'',
+    title:'Fried chicken',
+    category:'breakfast',
+    price:350
+    img:'./images/item4.jpg',
+    desc:'fried crispy chicken with a side of fries and dip',
 },    
 ]
