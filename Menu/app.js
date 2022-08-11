@@ -39,6 +39,14 @@ const menu=[
     img:'./images/item5.jpg',
     desc:'yummy milk tea infused with fragrant masala from the himalayas',
 },  
+{
+    id:6,
+    title: 'Peach ice tea',
+    category:'drinks',
+    price:125,
+    img:'./images/item6.jpg',
+    desc:'Cold refreshing ice tea with peach flavouring perfect for a cold day.',
+},  
   
 ];
 const sectionCenter=document.querySelector('.section-center');
