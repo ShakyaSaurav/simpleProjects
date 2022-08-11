@@ -30,7 +30,16 @@ const menu=[
     price:350,
     img:'./images/item4.jpg',
     desc:'fried crispy chicken with a side of fries and dip',
-},    
+},  
+{
+    id:5,
+    title:'Masala tea',
+    category:'drinks',
+    price:25,
+    img:'./images/item5.jpg',
+    desc:'yummy milk tea infused with fragrant masala from the himalayas',
+},  
+  
 ];
 const sectionCenter=document.querySelector('.section-center');
 const filterBtns=document.querySelectorAll('.filter-btn');
