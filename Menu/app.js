@@ -50,7 +50,9 @@ const menu=[
   
 ];
 const sectionCenter=document.querySelector('.section-center');
-const filterBtns=document.querySelectorAll('.filter-btn');
+const container= document.querySelector('.btn-container');
+
+
 //load items
 window.addEventListener('DOMContentLoaded',function(){
     displayMenuItems(menu);
@@ -63,14 +65,9 @@ window.addEventListener('DOMContentLoaded',function(){
     ['all']);
     const categoryBtns=categories.map(function(category){
         return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
-    }).join('');
-    console.log(categoryBtns);
-    //console.log(categories);
-
- //console.log('cooking');
-});
-
-//filter items
+    }).join('');container.innerHTML =categoryBtns;
+    const filterBtns=document.querySelectorAll('.filter-btn');
+    //filter items
 filterBtns.forEach(function(btn){
     btn.addEventListener('click',function(e){
         const category= e.currentTarget.dataset.id;
@@ -88,6 +85,14 @@ filterBtns.forEach(function(btn){
     }
     });
 });
+
+    //console.log(categoryBtns);
+    //console.log(categories);
+
+ //console.log('cooking');
+});
+
+
 
 
 function displayMenuItems(menuItems){
