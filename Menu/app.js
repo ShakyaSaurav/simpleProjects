@@ -59,8 +59,13 @@ window.addEventListener('DOMContentLoaded',function(){
             values.push(item.category);
         }
         return values;
-    },['all']);
-    console.log(categories);
+    },
+    ['all']);
+    const categoryBtns=categories.map(function(category){
+        return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
+    }).join('');
+    console.log(categoryBtns);
+    //console.log(categories);
 
  //console.log('cooking');
 });
