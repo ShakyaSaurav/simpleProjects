@@ -11,3 +11,7 @@ else{
     video.play();
 }
 });
+//preloader
+const preloader =document.addEventListener('load',function(){
+preloader.classList.add('hide-preloader');
+});
