@@ -45,7 +45,10 @@ scrollLinks.forEach(function(link){
         //prevetn default
         e.preventDefault();
         //navigate to specific spot
-        const id = e.currentTarget.getAttribute('href');
-        console.log(id);
+        const id = e.currentTarget.getAttribute('href').slice(1);
+        //console.log(id);
+        const element= document.getElementById(id);
+        let position = element.offsetTop;
+        console.log(position);
     });
 });
