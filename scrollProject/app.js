@@ -48,7 +48,20 @@ scrollLinks.forEach(function(link){
         const id = e.currentTarget.getAttribute('href').slice(1);
         //console.log(id);
         const element= document.getElementById(id);
-        let position = element.offsetTop;
-        console.log(position);
+        //calculate height
+        const navHeight=navbar.getBoundingClientRect().height;
+        const conrainerHeight= linksContainer.getBoundingClientRect().height;
+        const fixedNav= navbar,classList.contains('fixed-nav');
+        let position = element.offsetTop-navHeight;
+
+        if(!fixedNav){
+            position = position- navHeight
+        }
+        //console.log(position);
+        window.scrollTo({
+            left:0,
+            top: position;
+        });
+        linksContainer.style.height=0;
     });
 });
