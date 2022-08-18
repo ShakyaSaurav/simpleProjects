@@ -39,3 +39,13 @@ else{
     topLink.classList.remove('show-link');
 }
 });
+const scrollLinks = document.querySelectorAll('.scroll-link');
+scrollLinks.forEach(function(link){
+    link.addEventListener('click',function(e){
+        //prevetn default
+        e.preventDefault();
+        //navigate to specific spot
+        const id = e.currentTarget.getAttribute('href');
+        console.log(id);
+    });
+});
