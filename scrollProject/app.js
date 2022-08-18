@@ -24,10 +24,18 @@ const topLink = document.querySelector(".top-link");
 window.addEventListener('scroll',function(){
  //console.log(window.pageYOffset);
 const scrollHeight= window.pageYOffset;
-const navHeight= navBar.getBoundingClientRect().height;
+const navHeight= navbar.getBoundingClientRect().height;
 if(scrollHeight>navHeight){
     navbar.classList.add('fixed-nav');
 }else{
     navbar.classList.remove('.fixed-nav');
+}
+
+if(scrollHeight>500){
+    //console.log(toplink.classlist);
+    topLink.classList.add('show-link');
+}
+else{
+    topLink.classList.remove('show-link');
 }
 });
