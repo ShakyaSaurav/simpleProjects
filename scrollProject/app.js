@@ -9,7 +9,7 @@ const links=document.querySelector('.links');
 
 navToggle.addEventListener('click',function(){
     //linksContainer.classList.toggle("show-links");
-    const containerHeight =linksContainer.getBoundingClientRect();
+    const containerHeight =linksContainer.getBoundingClientRect().height;
     //console.log(containerHeight);
     const linksHeight = links.getBoundingClientRect().height;
     //console.log(linksHeight);
@@ -28,7 +28,7 @@ const navHeight= navbar.getBoundingClientRect().height;
 if(scrollHeight>navHeight){
     navbar.classList.add('fixed-nav');
 }else{
-    navbar.classList.remove('.fixed-nav');
+    navbar.classList.remove('fixed-nav');
 }
 
 if(scrollHeight>500){
@@ -49,7 +49,7 @@ scrollLinks.forEach(function(link){
         //console.log(id);
         const element= document.getElementById(id);
         //calculate height
-        const navHeight=navbar.getBoundingClientRect().height;
+        const navHeight = navbar.getBoundingClientRect().height;
         const containerHeight= linksContainer.getBoundingClientRect().height;
         const fixedNav= navbar.classList.contains('fixed-nav');
         let position = element.offsetTop - navHeight;
@@ -57,9 +57,11 @@ scrollLinks.forEach(function(link){
         if(!fixedNav){
             position = position - navHeight;
         }
+
         if(navHeight > 82){
-            position = position +containerHeight;
+            position = position + containerHeight;
         }
+
         //console.log(position);
         window.scrollTo({
             left:0,
