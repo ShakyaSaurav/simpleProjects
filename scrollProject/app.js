@@ -55,12 +55,15 @@ scrollLinks.forEach(function(link){
         let position = element.offsetTop - navHeight;
 
         if(!fixedNav){
-            position = position- navHeight;
+            position = position - navHeight;
+        }
+        if(navHeight > 82){
+            position = position +containerHeight;
         }
         //console.log(position);
         window.scrollTo({
             left:0,
-            top: position;
+            top: position,
         });
         linksContainer.style.height=0;
     });
