@@ -16,6 +16,11 @@ const text = [
 
   form.addEventListener("submit",function(e){
     e.preventDefault();
-    const value= amount.value;
-    
+    const value= parseInt(amount.value);
+    //empty
+    //less thanzero
+    //more than 9
+    if(isNaN(value) || value<0 || value>9 ){
+        result.innerHTML=`<p class ="result"> ${text[0]} </p>`;
+    }
   });
