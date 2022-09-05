@@ -17,10 +17,11 @@ const text = [
   form.addEventListener("submit",function(e){
     e.preventDefault();
     const value= parseInt(amount.value);
+    const random = Math.floor(Math.random()*text.length);
     //empty
     //less thanzero
     //more than 9
-    if(isNaN(value) || value<0 || value>9 ){
-        result.innerHTML=`<p class ="result"> ${text[0]} </p>`;
+    if(isNaN(value) || value<0 || value>9){
+       result.innerHTML= `<p class="result"> ${text[random]} </p>`;
     }
   });
