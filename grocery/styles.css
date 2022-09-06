@@ -273,3 +273,56 @@ Grocery List
   border-radius: var(--radius);
   text-transform: capitalize;
 }
+.grocery-item:hover {
+    color: var(--clr-grey-5);
+    background: var(--clr-grey-10);
+  }
+  .grocery-item:hover .title {
+    color: var(--clr-grey-5);
+  }
+  .title {
+    margin-bottom: 0;
+    color: var(--clr-grey-1);
+    letter-spacing: 2px;
+    transition: var(--transition);
+  }
+  .edit-btn,
+  .delete-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: var(--transition);
+  }
+  .edit-btn {
+    color: var(--clr-green-light);
+  }
+  .edit-btn:hover {
+    color: var(--clr-green-dark);
+  }
+  .delete-btn {
+    color: var(--clr-red-light);
+  }
+  .delete-btn:hover {
+    color: var(--clr-red-dark);
+  }
+  .clear-btn {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-red-light);
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1.25rem;
+  }
+  .clear-btn:hover {
+    color: var(--clr-red-dark);
+  }
